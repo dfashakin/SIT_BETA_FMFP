@@ -58,7 +58,7 @@ describe('Validate the functionality of the Flood Summary Page', () => {
 	it('Validate that the user can change the Name entered on the Summary Page', () => {
         browser.url('/');
         SIT_Login.loginValidCredentials();
-		browser.pause(5000);
+	browser.pause(5000);
 		SIT_Flood_Risk_Planning.selectStartNowCommandButton();
 		SIT_Find_Location.selectPlacePostcodeOptionButton();
 		SIT_Find_Location.validatePostcodeEntry('CW5 5US');
