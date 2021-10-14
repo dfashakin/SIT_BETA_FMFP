@@ -32,15 +32,15 @@ it('Validate Navigation to the Results Explained Page', () => {
 		const resultsExplainedTitleHeader = SIT_Results_Explained.resultsExplainedTitleHeader;
 		resultsExplainedTitleHeader.waitForExist();
 		expect(resultsExplainedTitleHeader).toHaveText("Your results explained");
-		const whenNeedFloodRiskAssessmentHeader = SIT_Results_Explained.whenNeedFloodRiskAssessmentHeader;
-		whenNeedFloodRiskAssessmentHeader.waitForExist();
-		expect(whenNeedFloodRiskAssessmentHeader).toHaveText("When you need a flood risk assessment");
+		const floodRiskAssessmentHeaderZone1 = SIT_Results_Explained.floodRiskAssessmentHeaderZone1;
+		floodRiskAssessmentHeaderZone1.waitForExist();
+		expect(floodRiskAssessmentHeaderZone1).toHaveText("When you need a flood risk assessment");
 		const floodZoneText = SIT_Results_Explained.floodZoneText;
 		floodZoneText.waitForExist();
 		expect(floodZoneText).toHaveText("Because your development is in flood zone 1, it has a low probability of flooding.");
-		const floodZonesExplainedHeader = SIT_Results_Explained.floodZonesExplainedHeader;
-		floodZonesExplainedHeader.waitForExist();
-		expect(floodZonesExplainedHeader).toHaveText("Flood zones explained");
+		const floodZone1ExplainedHeader = SIT_Results_Explained.floodZone1ExplainedHeader;
+		floodZone1ExplainedHeader.waitForExist();
+		expect(floodZone1ExplainedHeader).toHaveText("Flood zones explained");
 		browser.pause(5000);
 		const getHelpHeader = SIT_Results_Explained.getHelpHeader;
 		getHelpHeader.waitForExist();
@@ -67,6 +67,7 @@ it('Validate Navigation to the Results Explained Page', () => {
 
 
 
+
 	it('Validate that the Terms and conditions Link is Displayed', () => {
 		const termsAndConditionsLink = SIT_Login.termsAndConditionsLink;
 		expect(termsAndConditionsLink).toBeDisplayed();
@@ -79,6 +80,7 @@ it('Validate Navigation to the Results Explained Page', () => {
 			expect(privacyNoticeLink).toBeDisplayed();
 		});
 	
+
 
 		it('Validate that the Built by the Environment Agency Link is Displayed', () => {
 			const builtByEnvironmentAgencyLink = SIT_Login.builtByEnvironmentAgencyLink;
@@ -98,6 +100,12 @@ it('Validate Navigation to the Results Explained Page', () => {
 	
 	});
 		
+
+
+
+
+
+
 
 
 
