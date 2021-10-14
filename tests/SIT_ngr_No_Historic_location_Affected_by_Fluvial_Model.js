@@ -45,7 +45,6 @@ describe('Validate that the Application Complete Page is Displayed', () => {
     });
 
 
-
 	
 
 	it('Validate that the Accessibility footer Link', () => {
@@ -72,8 +71,8 @@ describe('Validate that the Application Complete Page is Displayed', () => {
 			const privacyNoticeLink = SIT_Login.privacyNoticeLink;
 			expect(privacyNoticeLink).toBeDisplayed();
 		});
-	
-	
+
+
 		it('Validate that the Built by the Environment Agency Link is Displayed', () => {
 			const builtByEnvironmentAgencyLink = SIT_Login.builtByEnvironmentAgencyLink;
 			expect(builtByEnvironmentAgencyLink).toBeDisplayed();
@@ -106,9 +105,18 @@ describe('Validate that the Application Complete Page is Displayed', () => {
 
 
 
-
 	
 });
+
+
+
+
+
+
+
+
+    
+
 
 
 
