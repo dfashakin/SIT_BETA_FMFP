@@ -31,16 +31,12 @@ describe('Validate that the appropriate text is Displayed Results Explained Page
 		const resultsExplainedTitleHeader = SIT_Results_Explained.resultsExplainedTitleHeader;
 		resultsExplainedTitleHeader.waitForExist();
 		expect(resultsExplainedTitleHeader).toHaveText("Your results explained");
-		const whenNeedFloodRiskAssessmentHeader = SIT_Results_Explained.whenNeedFloodRiskAssessmentHeader;
-		whenNeedFloodRiskAssessmentHeader.waitForExist();
-		expect(whenNeedFloodRiskAssessmentHeader).toHaveText("Next steps");
+		const floodRiskAssessmentHeaderZoneTwo = SIT_Results_Explained.floodRiskAssessmentHeaderZoneTwo;
+		floodRiskAssessmentHeaderZoneTwo.waitForExist();
+		expect(floodRiskAssessmentHeaderZoneTwo).toHaveText("Next steps");
 		const floodZoneText = SIT_Results_Explained.floodZoneText;
 		floodZoneText.waitForExist();
 		expect(floodZoneText).toHaveText("Because your development is in flood zone 2, it has medium probability of flooding. This means you’ll need to do a flood risk assessment as part of your planning application.");
-		const floodZonesExplainedHeader = SIT_Results_Explained.floodZonesExplainedHeader;
-		floodZonesExplainedHeader.waitForExist();
-		expect(floodZonesExplainedHeader).toHaveText("Getting a flood risk assessment");
-		browser.pause(5000);
 		const getHelpHeader = SIT_Results_Explained.getHelpHeader;
 		getHelpHeader.waitForExist();
 		expect(getHelpHeader).toHaveText("Get help");
@@ -49,9 +45,6 @@ describe('Validate that the appropriate text is Displayed Results Explained Page
 		expect(contactYourLocalAuthorityText).toHaveText("St Albans");
 
 });
-
-
-
 
 
 	it('Validate that the Accessibility footer Link', () => {
@@ -67,7 +60,6 @@ describe('Validate that the appropriate text is Displayed Results Explained Page
 
 
 
-
 	it('Validate that the Terms and conditions Link is Displayed', () => {
 		const termsAndConditionsLink = SIT_Login.termsAndConditionsLink;
 		expect(termsAndConditionsLink).toBeDisplayed();
@@ -78,7 +70,6 @@ describe('Validate that the appropriate text is Displayed Results Explained Page
 			const privacyNoticeLink = SIT_Login.privacyNoticeLink;
 			expect(privacyNoticeLink).toBeDisplayed();
 		});
-	
 
 
 		it('Validate that the Built by the Environment Agency Link is Displayed', () => {
@@ -99,6 +90,12 @@ describe('Validate that the appropriate text is Displayed Results Explained Page
 	
 	});
 		
+
+
+
+
+
+
 
 
 
