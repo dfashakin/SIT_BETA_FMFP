@@ -65,12 +65,14 @@ describe('Validate that the Application Complete Page is Displayed', () => {
 			 expect(termsAndConditionsLink).toBeDisplayed();
 			});	
 
+
 		
 		it('Validate that the Privacy Notice Link is Displayed', () => {
 			const privacyNoticeLink = SIT_Login.privacyNoticeLink;
 			expect(privacyNoticeLink).toBeDisplayed();
 		});
 	
+
 
 		it('Validate that the Built by the Environment Agency Link is Displayed', () => {
 			const builtByEnvironmentAgencyLink = SIT_Login.builtByEnvironmentAgencyLink;
@@ -100,22 +102,21 @@ describe('Validate that the Application Complete Page is Displayed', () => {
       });
 
 
-    it('Validate that the correct page is displayed if the contact the environment agency Link is selected', () => {
-        const contactEnvironmentAgencyLink = SIT_Application_Complete.contactEnvironmentAgencyLink;
-        contactEnvironmentAgencyLink.waitForExist();
-        contactEnvironmentAgencyLink.click();
-        browser.pause(2000);
-       // expect(browser).toHaveUrl('https://www.gov.uk/guidance/flood-risk-assessment-for-planning-applications#contact');
-       // expect(browser).toHaveTitle("Flood risk assessments if you're applying for planning permission - GOV.UK");
-	   	expect(browser).toHaveUrl('https://www.gov.uk/contact');
-        expect(browser).toHaveTitle("Find contact details for services - GOV.UK");
-        browser.pause(5000);
-        browser.back();
-      });
+ 
 
 
 	
 });
+
+
+
+
+
+
+
+
+    
+
 
 
 
