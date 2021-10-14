@@ -29,15 +29,12 @@ describe('Validate that the appropriate text is Displayed Results Explained Page
 		const resultsExplainedTitleHeader = SIT_Results_Explained.resultsExplainedTitleHeader;
 		resultsExplainedTitleHeader.waitForExist();
 		expect(resultsExplainedTitleHeader).toHaveText("Your results explained");
-		const whenNeedFloodRiskAssessmentHeader = SIT_Results_Explained.whenNeedFloodRiskAssessmentHeader;
-		whenNeedFloodRiskAssessmentHeader.waitForExist();
-		expect(whenNeedFloodRiskAssessmentHeader).toHaveText("Next steps");
+		const floodRiskAssessmentHeaderZoneTHree = SIT_Results_Explained.floodRiskAssessmentHeaderZoneTHree;
+		floodRiskAssessmentHeaderZoneTHree.waitForExist();
+		expect(floodRiskAssessmentHeaderZoneTHree).toHaveText("Next steps");
 		const floodZoneText = SIT_Results_Explained.floodZoneText;
 		floodZoneText.waitForExist();
 		expect(floodZoneText).toHaveText("Because your development is in flood zone 3, it has a high probability of flooding. This means you’ll need to do a flood risk assessment as part of your planning application.");
-		const floodZonesExplainedHeader = SIT_Results_Explained.floodZonesExplainedHeader;
-		floodZonesExplainedHeader.waitForExist();
-		expect(floodZonesExplainedHeader).toHaveText("Getting a flood risk assessment");
 		browser.pause(5000);
 		const getHelpHeader = SIT_Results_Explained.getHelpHeader;
 		getHelpHeader.waitForExist();
@@ -47,8 +44,6 @@ describe('Validate that the appropriate text is Displayed Results Explained Page
 		expect(contactYourLocalAuthorityText).toHaveText("Cheshire East");
 
 });
-
-
 
 
 
@@ -65,10 +60,12 @@ describe('Validate that the appropriate text is Displayed Results Explained Page
 	});
 
 
+
 	it('Validate that the Terms and conditions Link is Displayed', () => {
 		const termsAndConditionsLink = SIT_Login.termsAndConditionsLink;
 		expect(termsAndConditionsLink).toBeDisplayed();
 		});	
+
 
 		
 		it('Validate that the Privacy Notice Link is Displayed', () => {
@@ -96,6 +93,11 @@ describe('Validate that the appropriate text is Displayed Results Explained Page
 	
 	});
 		
+
+
+
+
+
 
 
 
