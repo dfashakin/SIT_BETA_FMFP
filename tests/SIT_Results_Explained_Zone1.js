@@ -45,9 +45,13 @@ it('Validate Navigation to the Results Explained Page', () => {
 		const getHelpHeader = SIT_Results_Explained.getHelpHeader;
 		getHelpHeader.waitForExist();
 		expect(getHelpHeader).toHaveText("Get help");
-		const contactYourLocalAuthorityText = SIT_Results_Explained.contactYourLocalAuthorityText
-		contactYourLocalAuthorityText.waitForExist();
-		expect(contactYourLocalAuthorityText).toHaveText("contact your local authority, Ribble Valley");
+		//const contactYourLocalAuthorityText = SIT_Results_Explained.contactYourLocalAuthorityText
+		//contactYourLocalAuthorityText.waitForExist();
+		//expect(contactYourLocalAuthorityText).toHaveText("contact your local authority, Ribble Valley");
+		const contactYourLocalAuthorityTextZone1 = SIT_Results_Explained.contactYourLocalAuthorityTextZone1
+		contactYourLocalAuthorityTextZone1.waitForExist();
+		expect(contactYourLocalAuthorityTextZone1).toHaveText("Ribble Valley");
+
 
 });
 
