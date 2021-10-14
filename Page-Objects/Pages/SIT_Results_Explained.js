@@ -1,4 +1,4 @@
-
+//$("//*[text()='Find out what this means, and what you should do next.']");
 
 import Base from './Base'
 
@@ -30,6 +30,11 @@ class SIT_Results_Explained extends Base{
         return $("//div[@id='summary-page']/div[3]/h2[1]");
     }
 
+    get floodRiskAssessmentHeaderZone1(){
+
+        return $("//div[@id='summary-page']/div[3]/a[@href='os-terms']/h2[1]");
+    }
+
     get floodZoneText(){
 
         return $("//div[@id='summary-page']/div[1]/p[@class='govuk-body']");
@@ -38,6 +43,20 @@ class SIT_Results_Explained extends Base{
     get floodZonesExplainedHeader(){
 
         return $("//div[@id='summary-page']/div[3]/h2[3]");
+    }
+
+    get floodRiskAssessmentHeaderZoneTwo(){
+
+        return $("//div[@id='summary-page']/div[3]/a[@href='os-terms']/h2[1]")
+
+    }
+
+
+    get floodZone1ExplainedHeader(){
+
+        return $("//div[@id='summary-page']/div[3]/h2[1]");
+
+        
     }
 
     //Add 
@@ -71,9 +90,18 @@ class SIT_Results_Explained extends Base{
 
     }
 
+    get floodRiskAssessmentHeaderZoneTHree(){
+
+        return $("//div[@id='summary-page']/div[3]/a[@href='os-terms']/h2[1]")
+
+    }
+
+ 
+
 
   
 }
 
 export default new SIT_Results_Explained()
+
 
