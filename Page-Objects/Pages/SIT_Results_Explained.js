@@ -97,6 +97,13 @@ class SIT_Results_Explained extends Base{
     }
 
  
+    get contactYourLocalAuthorityTextZone1(){
+
+     return $("//div[@id='summary-page']/div[3]/ul[@class='govuk-list govuk-list--bullet']//span[@class='govuk-!-font-weight-bold']")
+       
+
+
+    }
 
 
   
