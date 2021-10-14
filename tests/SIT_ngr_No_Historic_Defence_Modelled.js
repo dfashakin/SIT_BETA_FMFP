@@ -67,13 +67,11 @@ describe('Validate that the Application Complete Page is Displayed', () => {
 			 expect(termsAndConditionsLink).toBeDisplayed();
 			});	
 
-
 		
 		it('Validate that the Privacy Notice Link is Displayed', () => {
 			const privacyNoticeLink = SIT_Login.privacyNoticeLink;
 			expect(privacyNoticeLink).toBeDisplayed();
 		});
-	
 
 
 		it('Validate that the Built by the Environment Agency Link is Displayed', () => {
@@ -106,9 +104,17 @@ describe('Validate that the Application Complete Page is Displayed', () => {
 
 
 
-
 	
 });
+
+
+
+
+
+
+
+
+    
 
 
 
