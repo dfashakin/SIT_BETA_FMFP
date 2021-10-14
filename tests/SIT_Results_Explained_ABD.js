@@ -34,15 +34,15 @@ describe('Validate that the appropriate text is Displayed Results Explained Page
 		const resultsExplainedTitleHeader = SIT_Results_Explained.resultsExplainedTitleHeader;
 		resultsExplainedTitleHeader.waitForExist();
 		expect(resultsExplainedTitleHeader).toHaveText("Your results explained");
-		const whenNeedFloodRiskAssessmentHeader = SIT_Results_Explained.whenNeedFloodRiskAssessmentHeader;
-		whenNeedFloodRiskAssessmentHeader.waitForExist();
-		expect(whenNeedFloodRiskAssessmentHeader).toHaveText("Next steps");
+		const nextStepsHeader = SIT_Results_Explained.nextStepsHeader;
+		nextStepsHeader.waitForExist();
+		expect(nextStepsHeader).toHaveText("Next steps");
 		const floodZoneText = SIT_Results_Explained.floodZoneText;
 		floodZoneText.waitForExist();
 		expect(floodZoneText).toHaveText("Your development is in flood zone 3. It is also in an area that has some protection from flood defences.");
-		const floodZonesExplainedHeader = SIT_Results_Explained.floodZonesExplainedHeader;
-		floodZonesExplainedHeader.waitForExist();
-		expect(floodZonesExplainedHeader).toHaveText("Getting a flood risk assessment");
+		const floodRiskAssessmentHeader = SIT_Results_Explained.floodRiskAssessmentHeader;
+		floodRiskAssessmentHeader.waitForExist();
+		expect(floodRiskAssessmentHeader).toHaveText("Getting a flood risk assessment");
 		browser.pause(5000);
 		const getHelpHeader = SIT_Results_Explained.getHelpHeader;
 		getHelpHeader.waitForExist();
@@ -52,6 +52,7 @@ describe('Validate that the appropriate text is Displayed Results Explained Page
 		expect(contactYourLocalAuthorityText).toHaveText("King's Lynn and West Norfolk");
 
 });
+
 
 
 
@@ -101,6 +102,12 @@ describe('Validate that the appropriate text is Displayed Results Explained Page
 	
 	});
 		
+
+
+
+
+
+
 
 
 
