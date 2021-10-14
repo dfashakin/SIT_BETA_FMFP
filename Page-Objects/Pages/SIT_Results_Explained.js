@@ -25,6 +25,12 @@ class SIT_Results_Explained extends Base{
 
         return $("//div[@id='summary-page']/div[3]/h2[3]");
     }
+    
+        get nextStepsHeader(){
+
+        return $("//div[@id='summary-page']/div[3]/a[@href='os-terms']/h2[1]");
+        
+    }
 
 
     get getHelpHeader(){
