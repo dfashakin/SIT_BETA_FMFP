@@ -43,9 +43,6 @@ describe('Validate that the Application Complete Page is Displayed', () => {
         
     });
 
-
-	
-
 	it('Validate that the Accessibility footer Link', () => {
 		const accessibilityFooterLink = SIT_Login.accessibilityFooterLink;
 		expect(accessibilityFooterLink).toBeDisplayed();

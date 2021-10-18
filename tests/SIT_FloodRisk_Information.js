@@ -17,15 +17,6 @@ describe('Validate Get Flood Risk Information for Planning Page Functionality', 
 		SIT_Login.loginValidCredentials();
 		browser.pause(3000);
 	});
-
-	it('Validate that the Help Footer Link is Displayed', () => {
-	
-		const helpFooterLink = SIT_Login.helpFooterLink;
-		helpFooterLink.waitForExist();
-		expect(helpFooterLink).toBeDisplayed();
-	
-	});
-
 	
 
 	it('Validate that the Accessibility footer Link', () => {
@@ -39,10 +30,7 @@ describe('Validate Get Flood Risk Information for Planning Page Functionality', 
 	 expect(cookiesFooterLink).toBeDisplayed();
 	});
 
-	it('Validate that the Privacy Policy Link is Displayed', () => {
-		const privacyPolicyLink = SIT_Login.privacyPolicyLinkDisplay;
-		 expect(privacyPolicyLink).toBeDisplayed();
-		});
+
 
 
 		it('Validate that the Terms and conditions Link is Displayed', () => {
@@ -50,20 +38,13 @@ describe('Validate Get Flood Risk Information for Planning Page Functionality', 
 			 expect(termsAndConditionsLink).toBeDisplayed();
 			});	
 
-		it('Validate that the Contact Link is Displayed', () => {
-		const contactLink = SIT_Login.contactLink;
-		expect(contactLink).toBeDisplayed();
-		});
 		
 		it('Validate that the Privacy Notice Link is Displayed', () => {
 			const privacyNoticeLink = SIT_Login.privacyNoticeLink;
 			expect(privacyNoticeLink).toBeDisplayed();
 		});
 	
-		it('Validate that the CymraegLink is Displayed', () => {
-			const cymraegLink = SIT_Login.cymraegLink;
-			expect(cymraegLink).toBeDisplayed();
-		});
+
 
 		it('Validate that the Built by the Environment Agency Link is Displayed', () => {
 			const builtByEnvironmentAgencyLink = SIT_Login.builtByEnvironmentAgencyLink;
@@ -91,14 +72,6 @@ describe('Validate Get Flood Risk Information for Planning Page Functionality', 
 	   	browser.back();
     });
     
-    /*it('Should Allow the User to Navigate to the Flood Risk Assessments for Planning Permission Page', () => {
-		SIT_Flood_Risk_Planning.selectFloodRisksAssessmentsPlanningLink();
-		expect(browser).toHaveTitle("Flood risk assessments if you're applying for planning permission - GOV.UK");
-        browser.back();
-        browser.pause(2000);
-    });*/
-
-
 
     it('Should Allow the User to view Details of Help for Doing things Online', () => {
 	SIT_Flood_Risk_Planning.selectNeedHelpDoingThingsOnlinelink();

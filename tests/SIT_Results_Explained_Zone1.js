@@ -49,10 +49,9 @@ it('Validate Navigation to the Results Explained Page', () => {
 		contactYourLocalAuthorityTextZone1.waitForExist();
 		expect(contactYourLocalAuthorityTextZone1).toHaveText("Ribble Valley");
 
+		
+
 });
-
-
-
 
 	it('Validate that the Accessibility footer Link', () => {
 		const accessibilityFooterLink = SIT_Login.accessibilityFooterLink;
@@ -64,8 +63,6 @@ it('Validate Navigation to the Results Explained Page', () => {
 	const cookiesFooterLink = SIT_Login.cookiesFooterLink;
 	 expect(cookiesFooterLink).toBeDisplayed();
 	});
-
-
 
 
 	it('Validate that the Terms and conditions Link is Displayed', () => {

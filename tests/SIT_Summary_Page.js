@@ -169,14 +169,6 @@ describe('Validate the functionality of the Flood Summary Page', () => {
 				});
 
 
-	
-	it('Validate that the Help Footer Link is Displayed', () => {
-		const helpFooterLink = SIT_Login.helpFooterLink;
-		helpFooterLink.waitForExist();
-		expect(helpFooterLink).toBeDisplayed();
-	
-	});
-
 
 	it('Validate that the Accessibility footer Link', () => {
 		const accessibilityFooterLink = SIT_Login.accessibilityFooterLink;
@@ -189,10 +181,6 @@ describe('Validate the functionality of the Flood Summary Page', () => {
 	 expect(cookiesFooterLink).toBeDisplayed();
 	});
 
-	it('Validate that the Privacy Policy Link is Displayed', () => {
-		const privacyPolicyLink = SIT_Login.privacyPolicyLinkDisplay;
-		 expect(privacyPolicyLink).toBeDisplayed();
-		});
 
 
 	it('Validate that the Terms and conditions Link is Displayed', () => {
@@ -200,20 +188,13 @@ describe('Validate the functionality of the Flood Summary Page', () => {
 		expect(termsAndConditionsLink).toBeDisplayed();
 		});	
 
-		it('Validate that the Contact Link is Displayed', () => {
-		const contactLink = SIT_Login.contactLink;
-		expect(contactLink).toBeDisplayed();
-		});
 		
 		it('Validate that the Privacy Notice Link is Displayed', () => {
 			const privacyNoticeLink = SIT_Login.privacyNoticeLink;
 			expect(privacyNoticeLink).toBeDisplayed();
 		});
 	
-		it('Validate that the CymraegLink is Displayed', () => {
-			const cymraegLink = SIT_Login.cymraegLink;
-			expect(cymraegLink).toBeDisplayed();
-		});
+
 		it('Validate that the Built by the Environment Agency Link is Displayed', () => {
 			const builtByEnvironmentAgencyLink = SIT_Login.builtByEnvironmentAgencyLink;
 			expect(builtByEnvironmentAgencyLink).toBeDisplayed();

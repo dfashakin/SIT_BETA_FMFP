@@ -44,8 +44,6 @@ describe('Validate that the Application Complete Page is Displayed', () => {
     });
 
 
-	
-
 	it('Validate that the Accessibility footer Link', () => {
 		const accessibilityFooterLink = SIT_Login.accessibilityFooterLink;
 		expect(accessibilityFooterLink).toBeDisplayed();
@@ -56,8 +54,6 @@ describe('Validate that the Application Complete Page is Displayed', () => {
 	const cookiesFooterLink = SIT_Login.cookiesFooterLink;
 	 expect(cookiesFooterLink).toBeDisplayed();
 	});
-
-
 
 
 		it('Validate that the Terms and conditions Link is Displayed', () => {

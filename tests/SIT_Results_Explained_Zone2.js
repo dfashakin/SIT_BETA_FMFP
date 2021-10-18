@@ -9,8 +9,6 @@ import SIT_Summary_Page from '../Page-Objects/Pages/SIT_Summary_Page';
 import SIT_Results_Explained from '../Page-Objects/Pages/SIT_Results_Explained';
 
 
-
-
 describe('Validate that the appropriate text is Displayed Results Explained Page in Zone 2', () => {
     it('Validate Navigation to the Results Explained Page', () => {
         App.openHomepage();
