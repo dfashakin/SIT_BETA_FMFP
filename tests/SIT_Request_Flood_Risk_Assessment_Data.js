@@ -55,7 +55,6 @@ describe('Validate the Request your Flood Risk Assessmen Data Functionality', ()
 			expect(privacyNoticeLink).toBeDisplayed();
 		});
 	
-	
 
 		it('Validate that the Built by the Environment Agency Link is Displayed', () => {
 			const builtByEnvironmentAgencyLink = SIT_Login.builtByEnvironmentAgencyLink;

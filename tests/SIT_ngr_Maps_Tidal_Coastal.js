@@ -45,6 +45,8 @@ describe('Validate that the Application Complete Page is Displayed', () => {
     });
 
 
+	
+
 	it('Validate that the Accessibility footer Link', () => {
 		const accessibilityFooterLink = SIT_Login.accessibilityFooterLink;
 		expect(accessibilityFooterLink).toBeDisplayed();
@@ -56,6 +58,9 @@ describe('Validate that the Application Complete Page is Displayed', () => {
 	 expect(cookiesFooterLink).toBeDisplayed();
 	});
 
+
+
+
 		it('Validate that the Terms and conditions Link is Displayed', () => {
 			const termsAndConditionsLink = SIT_Login.termsAndConditionsLink;
 			 expect(termsAndConditionsLink).toBeDisplayed();
@@ -66,6 +71,7 @@ describe('Validate that the Application Complete Page is Displayed', () => {
 			const privacyNoticeLink = SIT_Login.privacyNoticeLink;
 			expect(privacyNoticeLink).toBeDisplayed();
 		});
+	
 
 
 		it('Validate that the Built by the Environment Agency Link is Displayed', () => {
@@ -94,6 +100,8 @@ describe('Validate that the Application Complete Page is Displayed', () => {
         expect(browser).toHaveTitle("Flood risk assessments if you're applying for planning permission - GOV.UK");
         browser.back();
       });
+
+
 
 
 

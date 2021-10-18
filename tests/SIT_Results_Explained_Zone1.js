@@ -45,13 +45,19 @@ it('Validate Navigation to the Results Explained Page', () => {
 		const getHelpHeader = SIT_Results_Explained.getHelpHeader;
 		getHelpHeader.waitForExist();
 		expect(getHelpHeader).toHaveText("Get help");
+		//const contactYourLocalAuthorityText = SIT_Results_Explained.contactYourLocalAuthorityText
+		//contactYourLocalAuthorityText.waitForExist();
+		//expect(contactYourLocalAuthorityText).toHaveText("contact your local authority, Ribble Valley");
 		const contactYourLocalAuthorityTextZone1 = SIT_Results_Explained.contactYourLocalAuthorityTextZone1
 		contactYourLocalAuthorityTextZone1.waitForExist();
 		expect(contactYourLocalAuthorityTextZone1).toHaveText("Ribble Valley");
 
-		
 
 });
+
+
+
+
 
 	it('Validate that the Accessibility footer Link', () => {
 		const accessibilityFooterLink = SIT_Login.accessibilityFooterLink;
@@ -63,6 +69,8 @@ it('Validate Navigation to the Results Explained Page', () => {
 	const cookiesFooterLink = SIT_Login.cookiesFooterLink;
 	 expect(cookiesFooterLink).toBeDisplayed();
 	});
+
+
 
 
 	it('Validate that the Terms and conditions Link is Displayed', () => {
@@ -97,6 +105,12 @@ it('Validate Navigation to the Results Explained Page', () => {
 	
 	});
 		
+
+
+
+
+
+
 
 
 

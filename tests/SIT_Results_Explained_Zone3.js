@@ -46,6 +46,8 @@ describe('Validate that the appropriate text is Displayed Results Explained Page
 });
 
 
+
+
 	it('Validate that the Accessibility footer Link', () => {
 		const accessibilityFooterLink = SIT_Login.accessibilityFooterLink;
 		expect(accessibilityFooterLink).toBeDisplayed();
@@ -91,6 +93,11 @@ describe('Validate that the appropriate text is Displayed Results Explained Page
 	
 	});
 		
+
+
+
+
+
 
 
 

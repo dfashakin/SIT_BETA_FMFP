@@ -17,6 +17,9 @@ describe('Validate Get Flood Risk Information for Planning Page Functionality', 
 		SIT_Login.loginValidCredentials();
 		browser.pause(3000);
 	});
+
+
+
 	
 
 	it('Validate that the Accessibility footer Link', () => {
@@ -32,19 +35,19 @@ describe('Validate Get Flood Risk Information for Planning Page Functionality', 
 
 
 
-
 		it('Validate that the Terms and conditions Link is Displayed', () => {
 			const termsAndConditionsLink = SIT_Login.termsAndConditionsLink;
 			 expect(termsAndConditionsLink).toBeDisplayed();
 			});	
 
+	
 		
 		it('Validate that the Privacy Notice Link is Displayed', () => {
 			const privacyNoticeLink = SIT_Login.privacyNoticeLink;
 			expect(privacyNoticeLink).toBeDisplayed();
 		});
 	
-
+	
 
 		it('Validate that the Built by the Environment Agency Link is Displayed', () => {
 			const builtByEnvironmentAgencyLink = SIT_Login.builtByEnvironmentAgencyLink;

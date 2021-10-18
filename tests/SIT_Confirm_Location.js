@@ -9,113 +9,98 @@ var config = require('../main-config/config.js');
 
 
 describe('Validate the functionality of the Confirm Location Page', () => {
-	it('Validate the Display of the Confirm your Location Page', () => {
-		App.openHomepage();
-		App.setWindowSize();
-		SIT_Login.loginValidCredentials();
-		browser.pause(5000);
-		SIT_Flood_Risk_Planning.selectStartNowCommandButton();
-		SIT_Find_Location.selectPlacePostcodeOptionButton();
-		SIT_Find_Location.validatePostcodeEntry(config.postcodeApplicationComplete);
-		SIT_Find_Location.selectContinueCommandButton();
-	});
+it('Validate the Display of the Confirm your Location Page', () => {
+App.openHomepage();
+App.setWindowSize();
+SIT_Login.loginValidCredentials();
+browser.pause(5000);
+SIT_Flood_Risk_Planning.selectStartNowCommandButton();
+SIT_Find_Location.selectPlacePostcodeOptionButton();
+SIT_Find_Location.validatePostcodeEntry(config.postcodeApplicationComplete);
+SIT_Find_Location.selectContinueCommandButton();
+});
 
 
+it('Validate that the Accessibility footer Link', () => {
+const accessibilityFooterLink = SIT_Login.accessibilityFooterLink;
+expect(accessibilityFooterLink).toBeDisplayed();
+});
+
+it('Validate that the Cookie Footer Link is Displayed', () => {
+const cookiesFooterLink = SIT_Login.cookiesFooterLink;
+expect(cookiesFooterLink).toBeDisplayed();
+});
+
+it('Validate that the Terms and conditions Link is Displayed', () => {
+const termsAndConditionsLink = SIT_Login.termsAndConditionsLink;
+expect(termsAndConditionsLink).toBeDisplayed();
+});	
+
+it('Validate that the Privacy Notice Link is Displayed', () => {
+const privacyNoticeLink = SIT_Login.privacyNoticeLink;
+expect(privacyNoticeLink).toBeDisplayed();
+});
 	
+it('Validate that the Built by the Environment Agency Link is Displayed', () => {
+const builtByEnvironmentAgencyLink = SIT_Login.builtByEnvironmentAgencyLink;
+expect(builtByEnvironmentAgencyLink).toBeDisplayed();
+});
 
-	it('Validate that the Accessibility footer Link', () => {
-		const accessibilityFooterLink = SIT_Login.accessibilityFooterLink;
-		expect(accessibilityFooterLink).toBeDisplayed();
+it('Validate that the Crown Copyright Icon is Displayed', () => {
+const crownCopyrightLink = SIT_Login.crownCopyrightLink;
+expect(crownCopyrightLink).toBeDisplayed();
+});
+
+it('Validate that the Open Government Licence Link is Displayed', () => {
+const openGovernmentLicenceLink = SIT_Login.openGovernmentLicenceLink;
+expect(openGovernmentLicenceLink).toBeDisplayed();
+});
+
+it('Validate that the Confirm Your Location Title Text is Displayed ', () => {
+ browser.switchWindow('Flood map for planning - GOV.UK');
+const confirmLocationTitleText = SIT_Confirm_Location.confirmLocationPageTitle;
+ confirmLocationTitleText.waitForExist();
+expect(confirmLocationTitleText).toHaveText('Confirm the location');
+ });
+
+it('Validate that the For small or residential developments: Title Text is Displayed ', () => {
+const smallResidentialDevelopmentsText = SIT_Confirm_Location.forSmallResidentialDevelopments;
+smallResidentialDevelopmentsText.waitForExist();
+expect(smallResidentialDevelopmentsText).toHaveText('For developments larger than a single residential property');  
+ });
+
+it('Validate that the For Larger Developments: Title Text is Displayed ', () => {
+const largerDevelopmentsText = SIT_Confirm_Location.forLargerDevelopments;
+largerDevelopmentsText.waitForExist();
+expect(largerDevelopmentsText).toHaveText('For single residential properties and extensions'); 
+const warningIcon = SIT_Confirm_Location.warninIcon;
+expect(warningIcon).toBeDisplayed();
+});
+
+it('Validate that the Confirm Location Map is Displayed ', () => {
+const confirmLocationMap = SIT_Confirm_Location.confirmLocationMapDisplay;
+confirmLocationMap.waitForExist();
+expect(confirmLocationMap).toBeDisplayed();
+});
+
+it('Validate that the Delete Command Button is displayed after the Draw Shape Option Button is Selected', () => {
+const deleteShape = SIT_Confirm_Location.deleteShapeCommandButton;
+deleteShape.waitForExist();
+expect(deleteShape).toBeDisplayed();
+});
 	
-	});
-
-	it('Validate that the Cookie Footer Link is Displayed', () => {
-	const cookiesFooterLink = SIT_Login.cookiesFooterLink;
-	 expect(cookiesFooterLink).toBeDisplayed();
-	});
-
-
-
-
-		it('Validate that the Terms and conditions Link is Displayed', () => {
-			const termsAndConditionsLink = SIT_Login.termsAndConditionsLink;
-			 expect(termsAndConditionsLink).toBeDisplayed();
-			});	
-
-
-		
-		it('Validate that the Privacy Notice Link is Displayed', () => {
-			const privacyNoticeLink = SIT_Login.privacyNoticeLink;
-			expect(privacyNoticeLink).toBeDisplayed();
-		});
+it('Validate that the Draw Shape Option Button is Displayed', () => {
+const drawShape = SIT_Confirm_Location.drawShapeOptionButton;
+drawShape.waitForExist();
+drawShape.click();
+});
 	
-
-
-		it('Validate that the Built by the Environment Agency Link is Displayed', () => {
-			const builtByEnvironmentAgencyLink = SIT_Login.builtByEnvironmentAgencyLink;
-			expect(builtByEnvironmentAgencyLink).toBeDisplayed();
-		});
-
-		it('Validate that the Crown Copyright Icon is Displayed', () => {
-			const crownCopyrightLink = SIT_Login.crownCopyrightLink;
-			expect(crownCopyrightLink).toBeDisplayed();
-		});
-
-
-		it('Validate that the Open Government Licence Link is Displayed', () => {
-			const openGovernmentLicenceLink = SIT_Login.openGovernmentLicenceLink;
-			expect(openGovernmentLicenceLink).toBeDisplayed();
-		});
-
-	it('Validate that the Confirm Your Location Title Text is Displayed ', () => {
-        browser.switchWindow('Flood map for planning - GOV.UK');
-		const confirmLocationTitleText = SIT_Confirm_Location.confirmLocationPageTitle;
-	    confirmLocationTitleText.waitForExist();
-	   	expect(confirmLocationTitleText).toHaveText('Confirm the location');
-       
-    });
-
-	it('Validate that the For small or residential developments: Title Text is Displayed ', () => {
-		const smallResidentialDevelopmentsText = SIT_Confirm_Location.forSmallResidentialDevelopments;
-        smallResidentialDevelopmentsText.waitForExist();
-        expect(smallResidentialDevelopmentsText).toHaveText('For developments larger than a single residential property');  
-    });
-
-    it('Validate that the For Larger Developments: Title Text is Displayed ', () => {
-		const largerDevelopmentsText = SIT_Confirm_Location.forLargerDevelopments;
-        largerDevelopmentsText.waitForExist();
-        expect(largerDevelopmentsText).toHaveText('For single residential properties and extensions'); 
-		const warningIcon = SIT_Confirm_Location.warninIcon;
-		expect(warningIcon).toBeDisplayed();
-	});
-
-
-    it('Validate that the Confirm Location Map is Displayed ', () => {
-		const confirmLocationMap = SIT_Confirm_Location.confirmLocationMapDisplay;
-        confirmLocationMap.waitForExist();
-		expect(confirmLocationMap).toBeDisplayed();
-	});
-
-	it('Validate that the Delete Command Button is displayed after the Draw Shape Option Button is Selected', () => {
-		const deleteShape = SIT_Confirm_Location.deleteShapeCommandButton;
-        deleteShape.waitForExist();
-		expect(deleteShape).toBeDisplayed();
-	});
-
-	it('Validate that the Draw Shape Option Button is Displayed', () => {
-		const drawShape = SIT_Confirm_Location.drawShapeOptionButton;
-		drawShape.waitForExist();
-		drawShape.click();
-		
-	});
-	
-	it('Validate that the user can navigate to the Flood risk information for this location Page', () => {
-		const confirmContinueCommandButton = SIT_Confirm_Location.confirmLocationContinueCommandButton;
-		confirmContinueCommandButton.waitForExist();
-		confirmContinueCommandButton.click();
-		browser.pause(5000);
-		
-    });
+it('Validate that the user can navigate to the Flood risk information for this location Page', () => {
+const confirmContinueCommandButton = SIT_Confirm_Location.confirmLocationContinueCommandButton;
+confirmContinueCommandButton.waitForExist();
+confirmContinueCommandButton.click();
+browser.pause(5000);
+ });
 
 
 });

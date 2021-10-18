@@ -33,7 +33,6 @@ describe('Validate the functionality of the Find Location Page', () => {
 
 
 
-
 		it('Validate that the Terms and conditions Link is Displayed', () => {
 			const termsAndConditionsLink = SIT_Login.termsAndConditionsLink;
 			 expect(termsAndConditionsLink).toBeDisplayed();

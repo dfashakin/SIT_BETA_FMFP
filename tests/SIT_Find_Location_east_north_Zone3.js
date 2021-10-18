@@ -18,6 +18,8 @@ describe('Validate the functionality of the Find Location Page', () => {
 	});
 
 
+	
+
 	it('Validate that the Accessibility footer Link', () => {
 		const accessibilityFooterLink = SIT_Login.accessibilityFooterLink;
 		expect(accessibilityFooterLink).toBeDisplayed();
@@ -35,7 +37,6 @@ describe('Validate the functionality of the Find Location Page', () => {
 			const termsAndConditionsLink = SIT_Login.termsAndConditionsLink;
 			 expect(termsAndConditionsLink).toBeDisplayed();
 			});	
-
 
 		
 		it('Validate that the Privacy Notice Link is Displayed', () => {

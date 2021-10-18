@@ -37,12 +37,15 @@ describe('Validate the functionality of the Find Location Page', () => {
 	 expect(cookiesFooterLink).toBeDisplayed();
 	});
 
+
+
+
 		it('Validate that the Terms and conditions Link is Displayed', () => {
 			const termsAndConditionsLink = SIT_Login.termsAndConditionsLink;
 			 expect(termsAndConditionsLink).toBeDisplayed();
 			});	
 
-
+	
 		
 		it('Validate that the Privacy Notice Link is Displayed', () => {
 			const privacyNoticeLink = SIT_Login.privacyNoticeLink;
@@ -115,6 +118,7 @@ describe('Validate the functionality of the Find Location Page', () => {
 		expect(northingErrorText).toBeDisplayed();
 	});
 
+	
 
 	it('Validate that the Appropriate Page is displayed if a Valid easting and Northing are entered by the User', () => {
 		SIT_Find_Location.selectEastingNorthingOptionButton();

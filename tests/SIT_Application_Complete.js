@@ -65,19 +65,17 @@ describe('Validate that the Request Received is Displayed', () => {
 	 expect(cookiesFooterLink).toBeDisplayed();
 	});
 
-
-
 		it('Validate that the Terms and conditions Link is Displayed', () => {
 			const termsAndConditionsLink = SIT_Login.termsAndConditionsLink;
 			 expect(termsAndConditionsLink).toBeDisplayed();
 			});	
-
 
 		
 		it('Validate that the Privacy Notice Link is Displayed', () => {
 			const privacyNoticeLink = SIT_Login.privacyNoticeLink;
 			expect(privacyNoticeLink).toBeDisplayed();
 		});
+	
 
 
 		it('Validate that the Built by the Environment Agency Link is Displayed', () => {

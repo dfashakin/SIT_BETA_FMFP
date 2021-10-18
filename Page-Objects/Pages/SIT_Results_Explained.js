@@ -53,12 +53,21 @@ class SIT_Results_Explained extends Base{
 
 
     get floodZone1ExplainedHeader(){
+<<<<<<< HEAD
 
         return $("//div[@id='summary-page']/div[3]/h2[1]");
 
         
     }
 
+=======
+
+        return $("//div[@id='summary-page']/div[3]/h2[1]");
+
+        
+    }
+
+>>>>>>> 4e3d6ccf3a1664657de4a873c02ae0d27d99478e
     //Add 
     get getHelpHeader(){
 
@@ -98,9 +107,21 @@ class SIT_Results_Explained extends Base{
     }
 
  
+<<<<<<< HEAD
+=======
+    get contactYourLocalAuthorityTextZone1(){
+
+     return $("//div[@id='summary-page']/div[3]/ul[@class='govuk-list govuk-list--bullet']//span[@class='govuk-!-font-weight-bold']")
+       
+
+
+    }
+>>>>>>> 4e3d6ccf3a1664657de4a873c02ae0d27d99478e
 
 
   
 }
 
 export default new SIT_Results_Explained()
+
+
