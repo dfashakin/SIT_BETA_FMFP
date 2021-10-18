@@ -14,6 +14,25 @@ class SIT_Results_Explained extends Base{
     get whenNeedFloodRiskAssessmentHeader(){
 
         return $("//div[@id='summary-page']/div[3]/h2[1]");
+    
+    }
+    //Add to Git Hub
+    get nextStepsHeader(){
+
+        return $("//div[@id='summary-page']/div[3]/a[@href='os-terms']/h2[1]");
+        
+    }
+
+    //Add to git
+
+    get floodRiskAssessmentHeader(){
+
+        return $("//div[@id='summary-page']/div[3]/h2[1]");
+    }
+
+    get floodRiskAssessmentHeaderZone1(){
+
+        return $("//div[@id='summary-page']/div[3]/a[@href='os-terms']/h2[1]");
     }
 
     get floodZoneText(){
@@ -26,15 +45,31 @@ class SIT_Results_Explained extends Base{
         return $("//div[@id='summary-page']/div[3]/h2[3]");
     }
 
+    get floodRiskAssessmentHeaderZoneTwo(){
 
-    get getHelpHeader(){
+        return $("//div[@id='summary-page']/div[3]/a[@href='os-terms']/h2[1]")
 
-        return $("//div[@id='summary-page']/div[3]/h2[4]");
     }
 
-    get contactYourLocalAuthorityText(){
 
-        return $("//div[@id='summary-page']/div[3]/ul[2]/li[1]")
+    get floodZone1ExplainedHeader(){
+
+        return $("//div[@id='summary-page']/div[3]/h2[1]");
+
+        
+    }
+
+    //Add 
+    get getHelpHeader(){
+
+        return $("//div[@id='summary-page']/div[3]/h2[2]");
+    
+    }
+
+    get contactYourLocalAuthorityTextZone1(){
+
+        return $("//div[@id='summary-page']/div[3]/ul[@class='govuk-list govuk-list--bullet']//span[@class='govuk-!-font-weight-bold']")
+       
 
 
     }
@@ -55,6 +90,14 @@ class SIT_Results_Explained extends Base{
         return $("//p[.='You should receive your data in 20 working days.']");
 
     }
+
+    get floodRiskAssessmentHeaderZoneTHree(){
+
+        return $("//div[@id='summary-page']/div[3]/a[@href='os-terms']/h2[1]")
+
+    }
+
+ 
 
 
   

@@ -214,7 +214,6 @@ describe('Validate the functionality of the Flood Summary Page', () => {
 			const cymraegLink = SIT_Login.cymraegLink;
 			expect(cymraegLink).toBeDisplayed();
 		});
-
 		it('Validate that the Built by the Environment Agency Link is Displayed', () => {
 			const builtByEnvironmentAgencyLink = SIT_Login.builtByEnvironmentAgencyLink;
 			expect(builtByEnvironmentAgencyLink).toBeDisplayed();

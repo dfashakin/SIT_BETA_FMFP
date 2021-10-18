@@ -32,31 +32,26 @@ it('Validate Navigation to the Results Explained Page', () => {
 		const resultsExplainedTitleHeader = SIT_Results_Explained.resultsExplainedTitleHeader;
 		resultsExplainedTitleHeader.waitForExist();
 		expect(resultsExplainedTitleHeader).toHaveText("Your results explained");
-		const whenNeedFloodRiskAssessmentHeader = SIT_Results_Explained.whenNeedFloodRiskAssessmentHeader;
-		whenNeedFloodRiskAssessmentHeader.waitForExist();
-		expect(whenNeedFloodRiskAssessmentHeader).toHaveText("When you need a flood risk assessment");
+		const floodRiskAssessmentHeaderZone1 = SIT_Results_Explained.floodRiskAssessmentHeaderZone1;
+		floodRiskAssessmentHeaderZone1.waitForExist();
+		expect(floodRiskAssessmentHeaderZone1).toHaveText("When you need a flood risk assessment");
 		const floodZoneText = SIT_Results_Explained.floodZoneText;
 		floodZoneText.waitForExist();
 		expect(floodZoneText).toHaveText("Because your development is in flood zone 1, it has a low probability of flooding.");
-		const floodZonesExplainedHeader = SIT_Results_Explained.floodZonesExplainedHeader;
-		floodZonesExplainedHeader.waitForExist();
-		expect(floodZonesExplainedHeader).toHaveText("Flood zones explained");
+		const floodZone1ExplainedHeader = SIT_Results_Explained.floodZone1ExplainedHeader;
+		floodZone1ExplainedHeader.waitForExist();
+		expect(floodZone1ExplainedHeader).toHaveText("Flood zones explained");
 		browser.pause(5000);
 		const getHelpHeader = SIT_Results_Explained.getHelpHeader;
 		getHelpHeader.waitForExist();
 		expect(getHelpHeader).toHaveText("Get help");
-		const contactYourLocalAuthorityText = SIT_Results_Explained.contactYourLocalAuthorityText
-		contactYourLocalAuthorityText.waitForExist();
-		expect(contactYourLocalAuthorityText).toHaveText("contact your local authority, Ribble Valley");
+		const contactYourLocalAuthorityTextZone1 = SIT_Results_Explained.contactYourLocalAuthorityTextZone1
+		contactYourLocalAuthorityTextZone1.waitForExist();
+		expect(contactYourLocalAuthorityTextZone1).toHaveText("Ribble Valley");
 
 });
 
-	it('Validate that the Help Footer Link is Displayed', () => {
-		const helpFooterLink = SIT_Login.helpFooterLink;
-		helpFooterLink.waitForExist();
-		expect(helpFooterLink).toBeDisplayed();
-	
-	});
+
 
 
 	it('Validate that the Accessibility footer Link', () => {
@@ -70,10 +65,7 @@ it('Validate Navigation to the Results Explained Page', () => {
 	 expect(cookiesFooterLink).toBeDisplayed();
 	});
 
-	it('Validate that the Privacy Policy Link is Displayed', () => {
-		const privacyPolicyLink = SIT_Login.privacyPolicyLinkDisplay;
-		 expect(privacyPolicyLink).toBeDisplayed();
-		});
+
 
 
 	it('Validate that the Terms and conditions Link is Displayed', () => {
@@ -81,20 +73,14 @@ it('Validate Navigation to the Results Explained Page', () => {
 		expect(termsAndConditionsLink).toBeDisplayed();
 		});	
 
-		it('Validate that the Contact Link is Displayed', () => {
-		const contactLink = SIT_Login.contactLink;
-		expect(contactLink).toBeDisplayed();
-		});
+
 		
 		it('Validate that the Privacy Notice Link is Displayed', () => {
 			const privacyNoticeLink = SIT_Login.privacyNoticeLink;
 			expect(privacyNoticeLink).toBeDisplayed();
 		});
 	
-		it('Validate that the CymraegLink is Displayed', () => {
-			const cymraegLink = SIT_Login.cymraegLink;
-			expect(cymraegLink).toBeDisplayed();
-		});
+
 
 		it('Validate that the Built by the Environment Agency Link is Displayed', () => {
 			const builtByEnvironmentAgencyLink = SIT_Login.builtByEnvironmentAgencyLink;
